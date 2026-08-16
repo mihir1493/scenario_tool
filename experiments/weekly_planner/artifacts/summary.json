@@ -1,0 +1,601 @@
+{
+  "built_at": "2026-08-15T10:59:30",
+  "history": {
+    "start": "2022-01-02",
+    "end": "2026-08-09",
+    "weeks": 241
+  },
+  "forecast_weeks": 104,
+  "categories": {
+    "Ice Cream": {
+      "drivers": [
+        "avg_price",
+        "competitor_price",
+        "promo_depth",
+        "promo_share",
+        "feature_display",
+        "distribution_acv",
+        "tv_grps",
+        "digital_spend",
+        "avg_temp_c",
+        "consumer_confidence"
+      ],
+      "dropped": [
+        "cpi_food"
+      ],
+      "config": {
+        "fourier_k": 3,
+        "adstock_decay": 0.5,
+        "alpha": 0.01
+      },
+      "metrics": {
+        "train": {
+          "n_weeks": 189,
+          "mape": 3.116048900878201,
+          "wape": 3.2834732854084376,
+          "r2_log": 0.9930347606722046,
+          "bias_pct": -0.06428433409090273
+        },
+        "test": {
+          "n_weeks": 52,
+          "mape": 7.884609128186329,
+          "wape": 8.371042918346241,
+          "r2_log": 0.9370367383547643,
+          "bias_pct": -8.342292027423436
+        },
+        "full_history": {
+          "n_weeks": 241,
+          "mape": 3.2538910221989745,
+          "wape": 3.4948609203929863,
+          "r2_log": 0.9924018830590199,
+          "bias_pct": -0.06305266442315771
+        },
+        "cv_rmse_log": 0.05269548540539407,
+        "config": {
+          "fourier_k": 3,
+          "adstock_decay": 0.5,
+          "alpha": 0.01
+        },
+        "config_with_all_drivers": {
+          "fourier_k": 2,
+          "adstock_decay": 0.3,
+          "alpha": 0.5
+        }
+      },
+      "elasticities": {
+        "avg_price": -2.0939314089456507,
+        "competitor_price": 0.5158616493745497,
+        "promo_depth": 0.42267562787171487,
+        "promo_share": 0.2736068101059719,
+        "feature_display": 0.36366233221025174,
+        "distribution_acv": 1.4427877890157488,
+        "tv_grps": 0.08319798277811183,
+        "digital_spend": 0.033476897818305235,
+        "avg_temp_c": 0.5398104147975066,
+        "consumer_confidence": 0.46310311103338475
+      },
+      "impacts": [
+        {
+          "driver": "avg_temp_c",
+          "label": "Average temperature (C)",
+          "group": "External",
+          "elasticity": 0.5398104147975066,
+          "log_sd": 0.6356385467081107,
+          "impact_pct": 40.934394314452675,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "avg_price",
+          "label": "Average price ($/unit)",
+          "group": "Price",
+          "elasticity": -2.0939314089456507,
+          "log_sd": 0.07191316760961221,
+          "impact_pct": -13.979215643874209,
+          "direction": "decreases volume"
+        },
+        {
+          "driver": "distribution_acv",
+          "label": "Distribution (% ACV)",
+          "group": "Distribution",
+          "elasticity": 1.4427877890157488,
+          "log_sd": 0.08605141227086631,
+          "impact_pct": 13.219013204995678,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "feature_display",
+          "label": "Feature + display (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.36366233221025174,
+          "log_sd": 0.2676114894288202,
+          "impact_pct": 10.221326605426583,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "promo_depth",
+          "label": "Promo depth (avg % off)",
+          "group": "Promotion",
+          "elasticity": 0.42267562787171487,
+          "log_sd": 0.17783122761064704,
+          "impact_pct": 7.806193643523218,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "tv_grps",
+          "label": "TV GRPs",
+          "group": "Media",
+          "elasticity": 0.08319798277811183,
+          "log_sd": 0.8791857071185768,
+          "impact_pct": 7.588811858116529,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "promo_share",
+          "label": "Stores on promo (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.2736068101059719,
+          "log_sd": 0.22176109526111293,
+          "impact_pct": 6.255389568443004,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "consumer_confidence",
+          "label": "Consumer confidence",
+          "group": "External",
+          "elasticity": 0.46310311103338475,
+          "log_sd": 0.08632820542651876,
+          "impact_pct": 4.078877220865373,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "competitor_price",
+          "label": "Competitor avg price ($/unit)",
+          "group": "Price",
+          "elasticity": 0.5158616493745497,
+          "log_sd": 0.07043215863006326,
+          "impact_pct": 3.7001369123511374,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "digital_spend",
+          "label": "Digital spend ($k)",
+          "group": "Media",
+          "elasticity": 0.033476897818305235,
+          "log_sd": 0.24325516289891236,
+          "impact_pct": 0.8176676133181182,
+          "direction": "increases volume"
+        }
+      ]
+    },
+    "Ground Coffee": {
+      "drivers": [
+        "avg_price",
+        "competitor_price",
+        "promo_depth",
+        "promo_share",
+        "feature_display",
+        "distribution_acv",
+        "tv_grps",
+        "digital_spend",
+        "consumer_confidence"
+      ],
+      "dropped": [
+        "avg_temp_c",
+        "cpi_food"
+      ],
+      "config": {
+        "fourier_k": 3,
+        "adstock_decay": 0.5,
+        "alpha": 0.5
+      },
+      "metrics": {
+        "train": {
+          "n_weeks": 189,
+          "mape": 3.0771112407010164,
+          "wape": 3.122411106266212,
+          "r2_log": 0.9757446386616868,
+          "bias_pct": -0.11422465340450438
+        },
+        "test": {
+          "n_weeks": 52,
+          "mape": 7.018011556925587,
+          "wape": 7.210502564326841,
+          "r2_log": 0.8493702251025572,
+          "bias_pct": -6.956043307594017
+        },
+        "full_history": {
+          "n_weeks": 241,
+          "mape": 3.580433980910884,
+          "wape": 3.606967146601514,
+          "r2_log": 0.9671125008994512,
+          "bias_pct": -0.13446158564974775
+        },
+        "cv_rmse_log": 0.06218473771890665,
+        "config": {
+          "fourier_k": 3,
+          "adstock_decay": 0.5,
+          "alpha": 0.5
+        },
+        "config_with_all_drivers": {
+          "fourier_k": 3,
+          "adstock_decay": 0.5,
+          "alpha": 3.0
+        }
+      },
+      "elasticities": {
+        "avg_price": -2.852502724279646,
+        "competitor_price": 0.5507367783207785,
+        "promo_depth": 0.5182453251730529,
+        "promo_share": 0.3233893709794171,
+        "feature_display": 0.2223826233922884,
+        "distribution_acv": 0.3592222921458611,
+        "tv_grps": 0.04291313164153542,
+        "digital_spend": 0.07712836590366684,
+        "consumer_confidence": 0.3061673083480816
+      },
+      "impacts": [
+        {
+          "driver": "avg_price",
+          "label": "Average price ($/unit)",
+          "group": "Price",
+          "elasticity": -2.852502724279646,
+          "log_sd": 0.06519841311312519,
+          "impact_pct": -16.970867933771917,
+          "direction": "decreases volume"
+        },
+        {
+          "driver": "promo_depth",
+          "label": "Promo depth (avg % off)",
+          "group": "Promotion",
+          "elasticity": 0.5182453251730529,
+          "log_sd": 0.16730883259812018,
+          "impact_pct": 9.057711601049734,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "promo_share",
+          "label": "Stores on promo (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.3233893709794171,
+          "log_sd": 0.2035872772296261,
+          "impact_pct": 6.805363735850656,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "feature_display",
+          "label": "Feature + display (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.2223826233922884,
+          "log_sd": 0.2743016820103805,
+          "impact_pct": 6.289883728262002,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "tv_grps",
+          "label": "TV GRPs",
+          "group": "Media",
+          "elasticity": 0.04291313164153542,
+          "log_sd": 1.3393430515127507,
+          "impact_pct": 5.915921997732965,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "competitor_price",
+          "label": "Competitor avg price ($/unit)",
+          "group": "Price",
+          "elasticity": 0.5507367783207785,
+          "log_sd": 0.06640405556269557,
+          "impact_pct": 3.724810743246465,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "consumer_confidence",
+          "label": "Consumer confidence",
+          "group": "External",
+          "elasticity": 0.3061673083480816,
+          "log_sd": 0.08632820542651876,
+          "impact_pct": 2.6783267686015133,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "distribution_acv",
+          "label": "Distribution (% ACV)",
+          "group": "Distribution",
+          "elasticity": 0.3592222921458611,
+          "log_sd": 0.07306607225506834,
+          "impact_pct": 2.6594446940046312,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "digital_spend",
+          "label": "Digital spend ($k)",
+          "group": "Media",
+          "elasticity": 0.07712836590366684,
+          "log_sd": 0.24431852462290757,
+          "impact_pct": 1.9022555125340013,
+          "direction": "increases volume"
+        }
+      ]
+    },
+    "Laundry Detergent": {
+      "drivers": [
+        "avg_price",
+        "competitor_price",
+        "promo_depth",
+        "promo_share",
+        "feature_display",
+        "distribution_acv",
+        "tv_grps",
+        "cpi_food"
+      ],
+      "dropped": [
+        "digital_spend",
+        "avg_temp_c",
+        "consumer_confidence"
+      ],
+      "config": {
+        "fourier_k": 1,
+        "adstock_decay": 0.7,
+        "alpha": 3.0
+      },
+      "metrics": {
+        "train": {
+          "n_weeks": 189,
+          "mape": 3.6966164532835197,
+          "wape": 3.701945939655361,
+          "r2_log": 0.9547291888789675,
+          "bias_pct": -0.17615000230029043
+        },
+        "test": {
+          "n_weeks": 52,
+          "mape": 3.8195602159387514,
+          "wape": 3.6694192974339366,
+          "r2_log": 0.968688415543447,
+          "bias_pct": -1.0260264151145115
+        },
+        "full_history": {
+          "n_weeks": 241,
+          "mape": 3.6525643934187473,
+          "wape": 3.623774525014084,
+          "r2_log": 0.9609871470807057,
+          "bias_pct": -0.1616824273756201
+        },
+        "cv_rmse_log": 0.06361829391340305,
+        "config": {
+          "fourier_k": 1,
+          "adstock_decay": 0.7,
+          "alpha": 3.0
+        },
+        "config_with_all_drivers": {
+          "fourier_k": 1,
+          "adstock_decay": 0.7,
+          "alpha": 10.0
+        }
+      },
+      "elasticities": {
+        "avg_price": -1.1605990991267123,
+        "competitor_price": 0.3266589495844408,
+        "promo_depth": 0.6116942428270249,
+        "promo_share": 0.37310008666180766,
+        "feature_display": 0.2974065861053783,
+        "distribution_acv": 0.6321909229235677,
+        "tv_grps": 0.02424259386705976,
+        "cpi_food": -1.2275770116446363
+      },
+      "impacts": [
+        {
+          "driver": "promo_depth",
+          "label": "Promo depth (avg % off)",
+          "group": "Promotion",
+          "elasticity": 0.6116942428270249,
+          "log_sd": 0.1668964163454984,
+          "impact_pct": 10.748267229006302,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "feature_display",
+          "label": "Feature + display (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.2974065861053783,
+          "log_sd": 0.2914647473045338,
+          "impact_pct": 9.055150422956926,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "cpi_food",
+          "label": "Food CPI index",
+          "group": "External",
+          "elasticity": -1.2275770116446363,
+          "log_sd": 0.07647319776607822,
+          "impact_pct": -8.960502901251388,
+          "direction": "decreases volume"
+        },
+        {
+          "driver": "promo_share",
+          "label": "Stores on promo (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.37310008666180766,
+          "log_sd": 0.22292302067187977,
+          "impact_pct": 8.672936003666788,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "avg_price",
+          "label": "Average price ($/unit)",
+          "group": "Price",
+          "elasticity": -1.1605990991267123,
+          "log_sd": 0.07657666614493074,
+          "impact_pct": -8.503988950279751,
+          "direction": "decreases volume"
+        },
+        {
+          "driver": "distribution_acv",
+          "label": "Distribution (% ACV)",
+          "group": "Distribution",
+          "elasticity": 0.6321909229235677,
+          "log_sd": 0.048870814683443536,
+          "impact_pct": 3.1377910540625775,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "tv_grps",
+          "label": "TV GRPs",
+          "group": "Media",
+          "elasticity": 0.02424259386705976,
+          "log_sd": 0.9835133102172037,
+          "impact_pct": 2.4129428595011992,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "competitor_price",
+          "label": "Competitor avg price ($/unit)",
+          "group": "Price",
+          "elasticity": 0.3266589495844408,
+          "log_sd": 0.06926200741262314,
+          "impact_pct": 2.288294237096178,
+          "direction": "increases volume"
+        }
+      ]
+    },
+    "Baby Formula": {
+      "drivers": [
+        "avg_price",
+        "promo_depth",
+        "promo_share",
+        "distribution_acv",
+        "tv_grps",
+        "digital_spend",
+        "avg_temp_c",
+        "consumer_confidence"
+      ],
+      "dropped": [
+        "competitor_price",
+        "feature_display",
+        "cpi_food"
+      ],
+      "config": {
+        "fourier_k": 1,
+        "adstock_decay": 0.0,
+        "alpha": 0.01
+      },
+      "metrics": {
+        "train": {
+          "n_weeks": 189,
+          "mape": 3.4675527456293826,
+          "wape": 3.450324029151634,
+          "r2_log": 0.9615781811630053,
+          "bias_pct": -0.0951128738337359
+        },
+        "test": {
+          "n_weeks": 52,
+          "mape": 4.640170081595851,
+          "wape": 4.433397639591634,
+          "r2_log": 0.9151469489105817,
+          "bias_pct": 3.3978998386362536
+        },
+        "full_history": {
+          "n_weeks": 241,
+          "mape": 3.495858433552633,
+          "wape": 3.470346418996642,
+          "r2_log": 0.9644303369688972,
+          "bias_pct": -0.0992539164887174
+        },
+        "cv_rmse_log": 0.06940455455647648,
+        "config": {
+          "fourier_k": 1,
+          "adstock_decay": 0.0,
+          "alpha": 0.01
+        },
+        "config_with_all_drivers": {
+          "fourier_k": 1,
+          "adstock_decay": 0.0,
+          "alpha": 1.0
+        }
+      },
+      "elasticities": {
+        "avg_price": -0.4533102898604942,
+        "promo_depth": 0.23248982969550785,
+        "promo_share": 0.1467289384412372,
+        "distribution_acv": 1.4933606290257078,
+        "tv_grps": 0.06957903401520435,
+        "digital_spend": 0.059766918757170356,
+        "avg_temp_c": -0.04641962301067295,
+        "consumer_confidence": 0.4991367895263097
+      },
+      "impacts": [
+        {
+          "driver": "tv_grps",
+          "label": "TV GRPs",
+          "group": "Media",
+          "elasticity": 0.06957903401520435,
+          "log_sd": 2.348046657235304,
+          "impact_pct": 17.7477947191258,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "distribution_acv",
+          "label": "Distribution (% ACV)",
+          "group": "Distribution",
+          "elasticity": 1.4933606290257078,
+          "log_sd": 0.10734983750653856,
+          "impact_pct": 17.38770879990641,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "digital_spend",
+          "label": "Digital spend ($k)",
+          "group": "Media",
+          "elasticity": 0.059766918757170356,
+          "log_sd": 0.8654333587675425,
+          "impact_pct": 5.308535131111314,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "consumer_confidence",
+          "label": "Consumer confidence",
+          "group": "External",
+          "elasticity": 0.4991367895263097,
+          "log_sd": 0.08632820542651876,
+          "impact_pct": 4.403141844349712,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "promo_depth",
+          "label": "Promo depth (avg % off)",
+          "group": "Promotion",
+          "elasticity": 0.23248982969550785,
+          "log_sd": 0.16178501003433662,
+          "impact_pct": 3.832970525645707,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "promo_share",
+          "label": "Stores on promo (% ACV)",
+          "group": "Promotion",
+          "elasticity": 0.1467289384412372,
+          "log_sd": 0.1962221262917031,
+          "impact_pct": 2.9209945067689924,
+          "direction": "increases volume"
+        },
+        {
+          "driver": "avg_temp_c",
+          "label": "Average temperature (C)",
+          "group": "External",
+          "elasticity": -0.04641962301067295,
+          "log_sd": 0.6356385467081107,
+          "impact_pct": -2.907504667864147,
+          "direction": "decreases volume"
+        },
+        {
+          "driver": "avg_price",
+          "label": "Average price ($/unit)",
+          "group": "Price",
+          "elasticity": -0.4533102898604942,
+          "log_sd": 0.0627035477637561,
+          "impact_pct": -2.802399730520655,
+          "direction": "decreases volume"
+        }
+      ]
+    }
+  }
+}

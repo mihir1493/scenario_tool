@@ -1,0 +1,1715 @@
+{
+  "selection": {
+    "global_gate_data_only": {
+      "kept": 8,
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "true_negatives": 3,
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1": 0.823529411764706
+    },
+    "global_gate_applied": {
+      "kept": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_negatives": 3,
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9473684210526316
+    },
+    "global_selected": [
+      "avg_price",
+      "distribution_acv",
+      "promo_depth",
+      "promo_share",
+      "media_spend",
+      "cpi_food",
+      "consumer_confidence",
+      "unemployment_rate",
+      "avg_temp_c",
+      "promo_echo"
+    ],
+    "global_selected_data_only": [
+      "avg_price",
+      "distribution_acv",
+      "promo_depth",
+      "promo_share",
+      "media_spend",
+      "consumer_confidence",
+      "avg_temp_c",
+      "promo_echo"
+    ],
+    "per_category_selected": {
+      "Beverages": [
+        "avg_price",
+        "promo_depth",
+        "promo_share",
+        "consumer_confidence",
+        "avg_temp_c"
+      ],
+      "Snacks": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "consumer_confidence",
+        "avg_temp_c"
+      ],
+      "Dairy": [
+        "avg_price",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "consumer_confidence",
+        "avg_temp_c"
+      ],
+      "Frozen Foods": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "consumer_confidence",
+        "avg_temp_c"
+      ],
+      "Household Care": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "consumer_confidence",
+        "promo_echo"
+      ]
+    },
+    "n_fitted_per_category": {
+      "Beverages": 5,
+      "Snacks": 7,
+      "Dairy": 6,
+      "Frozen Foods": 7,
+      "Household Care": 7
+    },
+    "global_table": [
+      {
+        "driver": "avg_price",
+        "group": "Commercial",
+        "stability": 1.0,
+        "sign_consistency": 1.0,
+        "elasticity_uc": -2.6094,
+        "impact_pct": 17.6217,
+        "log_sd": 0.0675,
+        "resid_sd": 0.0225,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": true
+      },
+      {
+        "driver": "distribution_acv",
+        "group": "Commercial",
+        "stability": 0.905,
+        "sign_consistency": 1.0,
+        "elasticity_uc": 1.2834,
+        "impact_pct": 9.4545,
+        "log_sd": 0.0737,
+        "resid_sd": 0.0205,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": true
+      },
+      {
+        "driver": "promo_depth",
+        "group": "Commercial",
+        "stability": 1.0,
+        "sign_consistency": 1.0,
+        "elasticity_uc": 0.462,
+        "impact_pct": 5.1187,
+        "log_sd": 0.1108,
+        "resid_sd": 0.0867,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": true
+      },
+      {
+        "driver": "promo_share",
+        "group": "Commercial",
+        "stability": 1.0,
+        "sign_consistency": 1.0,
+        "elasticity_uc": 0.2368,
+        "impact_pct": 3.6967,
+        "log_sd": 0.1561,
+        "resid_sd": 0.1283,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": true
+      },
+      {
+        "driver": "media_spend",
+        "group": "Commercial",
+        "stability": 1.0,
+        "sign_consistency": 1.0,
+        "elasticity_uc": 0.1112,
+        "impact_pct": 6.5941,
+        "log_sd": 0.5932,
+        "resid_sd": 0.5362,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": true
+      },
+      {
+        "driver": "cpi_food",
+        "group": "Macro",
+        "stability": 0.165,
+        "sign_consistency": 0.7475,
+        "elasticity_uc": 0.1504,
+        "impact_pct": 1.1517,
+        "log_sd": 0.0766,
+        "resid_sd": 0.0206,
+        "sign_ok": false,
+        "keep": true,
+        "reason": "protected (business prior)",
+        "keep_data": false,
+        "protected": true
+      },
+      {
+        "driver": "consumer_confidence",
+        "group": "Macro",
+        "stability": 0.9417,
+        "sign_consistency": 1.0,
+        "elasticity_uc": 0.4296,
+        "impact_pct": 4.8323,
+        "log_sd": 0.1125,
+        "resid_sd": 0.0864,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": true
+      },
+      {
+        "driver": "unemployment_rate",
+        "group": "Macro",
+        "stability": 0.2933,
+        "sign_consistency": 0.9489,
+        "elasticity_uc": -0.1436,
+        "impact_pct": 1.9043,
+        "log_sd": 0.1327,
+        "resid_sd": 0.0997,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "protected (business prior)",
+        "keep_data": false,
+        "protected": true
+      },
+      {
+        "driver": "avg_temp_c",
+        "group": "Macro",
+        "stability": 0.9,
+        "sign_consistency": 0.9944,
+        "elasticity_uc": 0.1888,
+        "impact_pct": 15.4843,
+        "log_sd": 0.8203,
+        "resid_sd": 0.1397,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": false
+      },
+      {
+        "driver": "promo_echo",
+        "group": "Decoy",
+        "stability": 0.855,
+        "sign_consistency": 1.0,
+        "elasticity_uc": 0.0709,
+        "impact_pct": 1.8994,
+        "log_sd": 0.2677,
+        "resid_sd": 0.2503,
+        "sign_ok": true,
+        "keep": true,
+        "reason": "kept",
+        "keep_data": true,
+        "protected": false
+      },
+      {
+        "driver": "search_index",
+        "group": "Decoy",
+        "stability": 0.355,
+        "sign_consistency": 0.5681,
+        "elasticity_uc": 0.0445,
+        "impact_pct": 0.4417,
+        "log_sd": 0.0993,
+        "resid_sd": 0.0464,
+        "sign_ok": true,
+        "keep": false,
+        "reason": "unstable",
+        "keep_data": false,
+        "protected": false
+      },
+      {
+        "driver": "competitor_promo",
+        "group": "Decoy",
+        "stability": 0.2917,
+        "sign_consistency": 0.5314,
+        "elasticity_uc": -0.0108,
+        "impact_pct": 0.1859,
+        "log_sd": 0.1722,
+        "resid_sd": 0.1661,
+        "sign_ok": true,
+        "keep": false,
+        "reason": "unstable",
+        "keep_data": false,
+        "protected": false
+      },
+      {
+        "driver": "fx_index",
+        "group": "Decoy",
+        "stability": 0.355,
+        "sign_consistency": 0.892,
+        "elasticity_uc": 0.1651,
+        "impact_pct": 0.392,
+        "log_sd": 0.0237,
+        "resid_sd": 0.0108,
+        "sign_ok": true,
+        "keep": false,
+        "reason": "unstable",
+        "keep_data": false,
+        "protected": false
+      }
+    ]
+  },
+  "accuracy": {
+    "overall": {
+      "A pooled": {
+        "R2 (log, in-sample)": 0.9227,
+        "MAPE % (in-sample)": 11.8485,
+        "MAPE % (holdout)": 14.185,
+        "R2 volume (holdout)": 0.9141,
+        "coefficients fitted": 30.0
+      },
+      "B percat all": {
+        "R2 (log, in-sample)": 0.9956,
+        "MAPE % (in-sample)": 2.9241,
+        "MAPE % (holdout)": 4.3285,
+        "R2 volume (holdout)": 0.9905,
+        "coefficients fitted": 130.0
+      },
+      "C percat selected": {
+        "R2 (log, in-sample)": 0.9945,
+        "MAPE % (in-sample)": 3.2615,
+        "MAPE % (holdout)": 9.0906,
+        "R2 volume (holdout)": 0.9516,
+        "coefficients fitted": 97.0
+      },
+      "D percat selected+pooled": {
+        "R2 (log, in-sample)": 0.9951,
+        "MAPE % (in-sample)": 3.0512,
+        "MAPE % (holdout)": 3.9699,
+        "R2 volume (holdout)": 0.9923,
+        "coefficients fitted": 97.0
+      },
+      "E oracle": {
+        "R2 (log, in-sample)": 0.9955,
+        "MAPE % (in-sample)": 2.932,
+        "MAPE % (holdout)": 4.4887,
+        "R2 volume (holdout)": 0.9909,
+        "coefficients fitted": 110.0
+      }
+    },
+    "by_category": {
+      "A pooled": {
+        "Beverages": 20.317,
+        "Snacks": 8.098,
+        "Dairy": 7.217,
+        "Frozen Foods": 11.333,
+        "Household Care": 23.959
+      },
+      "B percat all": {
+        "Beverages": 4.451,
+        "Snacks": 3.389,
+        "Dairy": 3.432,
+        "Frozen Foods": 5.843,
+        "Household Care": 4.528
+      },
+      "C percat selected": {
+        "Beverages": 11.01,
+        "Snacks": 7.41,
+        "Dairy": 4.804,
+        "Frozen Foods": 17.421,
+        "Household Care": 4.807
+      },
+      "D percat selected+pooled": {
+        "Beverages": 3.219,
+        "Snacks": 3.37,
+        "Dairy": 3.859,
+        "Frozen Foods": 3.733,
+        "Household Care": 5.669
+      },
+      "E oracle": {
+        "Beverages": 4.19,
+        "Snacks": 3.108,
+        "Dairy": 3.251,
+        "Frozen Foods": 7.814,
+        "Household Care": 4.081
+      }
+    }
+  },
+  "elasticity_recovery": {
+    "mae_by_group": {
+      "A pooled": {
+        "real drivers": 0.2434,
+        "  commercial": 0.2743,
+        "  macro": 0.2047,
+        "decoys (truth=0)": 0.0397,
+        "all candidates": 0.1807
+      },
+      "B percat all": {
+        "real drivers": 0.1815,
+        "  commercial": 0.1702,
+        "  macro": 0.1955,
+        "decoys (truth=0)": 0.2256,
+        "all candidates": 0.1951
+      },
+      "C percat selected": {
+        "real drivers": 0.2597,
+        "  commercial": 0.2765,
+        "  macro": 0.2387,
+        "decoys (truth=0)": 0.0028,
+        "all candidates": 0.1806
+      },
+      "D percat selected+pooled": {
+        "real drivers": 0.26,
+        "  commercial": 0.313,
+        "  macro": 0.1937,
+        "decoys (truth=0)": 0.0144,
+        "all candidates": 0.1844
+      },
+      "E oracle": {
+        "real drivers": 0.1334,
+        "  commercial": 0.1152,
+        "  macro": 0.1562,
+        "decoys (truth=0)": 0.0,
+        "all candidates": 0.0924
+      }
+    },
+    "mae_per_driver": {
+      "true_spread": {
+        "avg_price": 0.643,
+        "distribution_acv": 0.1,
+        "promo_depth": 0.085,
+        "promo_share": 0.073,
+        "media_spend": 0.018,
+        "cpi_food": 0.095,
+        "consumer_confidence": 0.125,
+        "unemployment_rate": 0.042,
+        "avg_temp_c": 0.44,
+        "promo_echo": 0.0,
+        "search_index": 0.0,
+        "competitor_promo": 0.0,
+        "fx_index": 0.0
+      },
+      "A pooled": {
+        "avg_price": 0.8295,
+        "distribution_acv": 0.3618,
+        "promo_depth": 0.0958,
+        "promo_share": 0.0343,
+        "media_spend": 0.05,
+        "cpi_food": 0.6148,
+        "consumer_confidence": 0.0514,
+        "unemployment_rate": 0.0185,
+        "avg_temp_c": 0.1342,
+        "promo_echo": 0.0674,
+        "search_index": 0.0609,
+        "competitor_promo": 0.0085,
+        "fx_index": 0.0221
+      },
+      "B percat all": {
+        "avg_price": 0.485,
+        "distribution_acv": 0.2119,
+        "promo_depth": 0.063,
+        "promo_share": 0.0778,
+        "media_spend": 0.0133,
+        "cpi_food": 0.6148,
+        "consumer_confidence": 0.0937,
+        "unemployment_rate": 0.0418,
+        "avg_temp_c": 0.0319,
+        "promo_echo": 0.0264,
+        "search_index": 0.0891,
+        "competitor_promo": 0.0269,
+        "fx_index": 0.7601
+      },
+      "C percat selected": {
+        "avg_price": 0.5672,
+        "distribution_acv": 0.629,
+        "promo_depth": 0.0781,
+        "promo_share": 0.0729,
+        "media_spend": 0.0354,
+        "cpi_food": 0.6148,
+        "consumer_confidence": 0.1155,
+        "unemployment_rate": 0.1798,
+        "avg_temp_c": 0.0445,
+        "promo_echo": 0.0111,
+        "search_index": 0.0,
+        "competitor_promo": 0.0,
+        "fx_index": 0.0
+      },
+      "D percat selected+pooled": {
+        "avg_price": 0.8737,
+        "distribution_acv": 0.5077,
+        "promo_depth": 0.1251,
+        "promo_share": 0.032,
+        "media_spend": 0.0267,
+        "cpi_food": 0.6148,
+        "consumer_confidence": 0.0776,
+        "unemployment_rate": 0.0185,
+        "avg_temp_c": 0.064,
+        "promo_echo": 0.0576,
+        "search_index": 0.0,
+        "competitor_promo": 0.0,
+        "fx_index": 0.0
+      },
+      "E oracle": {
+        "avg_price": 0.2996,
+        "distribution_acv": 0.1246,
+        "promo_depth": 0.0541,
+        "promo_share": 0.0733,
+        "media_spend": 0.0242,
+        "cpi_food": 0.4231,
+        "consumer_confidence": 0.1212,
+        "unemployment_rate": 0.0504,
+        "avg_temp_c": 0.0302,
+        "promo_echo": 0.0,
+        "search_index": 0.0,
+        "competitor_promo": 0.0,
+        "fx_index": 0.0
+      }
+    },
+    "price_elasticity": {
+      "true": {
+        "Beverages": -1.6879,
+        "Snacks": -1.7926,
+        "Dairy": -1.15,
+        "Frozen Foods": -1.7421,
+        "Household Care": -1.6179
+      },
+      "A pooled": {
+        "Beverages": -2.4277,
+        "Snacks": -2.4277,
+        "Dairy": -2.4277,
+        "Frozen Foods": -2.4277,
+        "Household Care": -2.4277
+      },
+      "B percat all": {
+        "Beverages": -1.791,
+        "Snacks": -0.9424,
+        "Dairy": -0.3466,
+        "Frozen Foods": -1.7329,
+        "Household Care": -0.9587
+      },
+      "C percat selected": {
+        "Beverages": -1.9744,
+        "Snacks": -3.0943,
+        "Dairy": -0.421,
+        "Frozen Foods": -1.5763,
+        "Household Care": -1.2651
+      },
+      "D percat selected+pooled": {
+        "Beverages": -3.3131,
+        "Snacks": -3.2498,
+        "Dairy": -0.9218,
+        "Frozen Foods": -2.377,
+        "Household Care": -2.0409
+      },
+      "E oracle": {
+        "Beverages": -1.8194,
+        "Snacks": -1.914,
+        "Dairy": -0.7445,
+        "Frozen Foods": -1.5532,
+        "Household Care": -0.9673
+      }
+    },
+    "cpi_elasticity": {
+      "true": {
+        "Beverages": -0.5632,
+        "Snacks": -0.6033,
+        "Dairy": -0.612,
+        "Frozen Foods": -0.6579,
+        "Household Care": -0.6375
+      },
+      "A pooled": {
+        "Beverages": 0.0,
+        "Snacks": 0.0,
+        "Dairy": 0.0,
+        "Frozen Foods": 0.0,
+        "Household Care": 0.0
+      },
+      "B percat all": {
+        "Beverages": -1.9913,
+        "Snacks": -0.2924,
+        "Dairy": 0.0,
+        "Frozen Foods": 0.0,
+        "Household Care": -0.7025
+      },
+      "C percat selected": {
+        "Beverages": 0.0,
+        "Snacks": 0.0,
+        "Dairy": 0.0,
+        "Frozen Foods": 0.0,
+        "Household Care": 0.0
+      },
+      "D percat selected+pooled": {
+        "Beverages": 0.0,
+        "Snacks": 0.0,
+        "Dairy": 0.0,
+        "Frozen Foods": 0.0,
+        "Household Care": 0.0
+      },
+      "E oracle": {
+        "Beverages": -1.272,
+        "Snacks": -0.4605,
+        "Dairy": -0.1203,
+        "Frozen Foods": 0.0,
+        "Household Care": -0.752
+      }
+    },
+    "degenerate_fallbacks": {
+      "A pooled": [],
+      "B percat all": [],
+      "C percat selected": [],
+      "D percat selected+pooled": [
+        "cpi_food"
+      ],
+      "E oracle": []
+    }
+  },
+  "scenario": {
+    "price_cut_lift": {
+      "true": {
+        "Beverages": 19.464,
+        "Snacks": 20.788,
+        "Dairy": 12.881,
+        "Frozen Foods": 20.147,
+        "Household Care": 18.586
+      },
+      "A pooled": {
+        "Beverages": 29.147,
+        "Snacks": 29.147,
+        "Dairy": 29.147,
+        "Frozen Foods": 29.147,
+        "Household Care": 29.147
+      },
+      "B percat all": {
+        "Beverages": 20.768,
+        "Snacks": 10.439,
+        "Dairy": 3.719,
+        "Frozen Foods": 20.032,
+        "Household Care": 10.628
+      },
+      "C percat selected": {
+        "Beverages": 23.124,
+        "Snacks": 38.544,
+        "Dairy": 4.536,
+        "Frozen Foods": 18.067,
+        "Household Care": 14.258
+      },
+      "D percat selected+pooled": {
+        "Beverages": 41.775,
+        "Snacks": 40.833,
+        "Dairy": 10.2,
+        "Frozen Foods": 28.46,
+        "Household Care": 23.99
+      },
+      "E oracle": {
+        "Beverages": 21.13,
+        "Snacks": 22.343,
+        "Dairy": 8.16,
+        "Frozen Foods": 17.779,
+        "Household Care": 10.729
+      }
+    },
+    "price_lift_mae_pp": {
+      "A pooled": 10.774,
+      "B percat all": 5.778,
+      "C percat selected": 7.234,
+      "D percat selected+pooled": 11.751,
+      "E oracle": 3.634
+    },
+    "phantom": {
+      "A pooled": {
+        "total_delta_pct": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": -0.1546,
+          "fx_index": -0.4026
+        },
+        "total_delta_volume": {
+          "promo_echo": 2248588.3017,
+          "search_index": 2031006.6731,
+          "competitor_promo": -281123.986,
+          "fx_index": -732276.0015
+        },
+        "Beverages": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": -0.1546,
+          "fx_index": -0.4026
+        },
+        "Snacks": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": -0.1546,
+          "fx_index": -0.4026
+        },
+        "Dairy": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": -0.1546,
+          "fx_index": -0.4026
+        },
+        "Frozen Foods": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": -0.1546,
+          "fx_index": -0.4026
+        },
+        "Household Care": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": -0.1546,
+          "fx_index": -0.4026
+        },
+        "worst_category_pct": {
+          "promo_echo": 1.2364,
+          "search_index": 1.1167,
+          "competitor_promo": 0.1546,
+          "fx_index": 0.4026
+        }
+      },
+      "B percat all": {
+        "total_delta_pct": {
+          "promo_echo": 0.3972,
+          "search_index": 0.0149,
+          "competitor_promo": -0.1611,
+          "fx_index": 0.7712
+        },
+        "total_delta_volume": {
+          "promo_echo": 754978.6233,
+          "search_index": 28278.8352,
+          "competitor_promo": -306165.5211,
+          "fx_index": 1465735.6046
+        },
+        "Beverages": {
+          "promo_echo": 0.6453,
+          "search_index": -0.6286,
+          "competitor_promo": 0.6901,
+          "fx_index": 25.1095
+        },
+        "Snacks": {
+          "promo_echo": 0.0042,
+          "search_index": 0.9608,
+          "competitor_promo": -0.2287,
+          "fx_index": -2.847
+        },
+        "Dairy": {
+          "promo_echo": 0.1383,
+          "search_index": -1.9273,
+          "competitor_promo": -0.701,
+          "fx_index": -25.89
+        },
+        "Frozen Foods": {
+          "promo_echo": 0.817,
+          "search_index": 3.5685,
+          "competitor_promo": -0.7177,
+          "fx_index": 13.4507
+        },
+        "Household Care": {
+          "promo_echo": 0.8096,
+          "search_index": 1.0913,
+          "competitor_promo": -0.1152,
+          "fx_index": -1.4119
+        },
+        "worst_category_pct": {
+          "promo_echo": 0.817,
+          "search_index": 3.5685,
+          "competitor_promo": 0.7177,
+          "fx_index": 25.89
+        }
+      },
+      "C percat selected": {
+        "total_delta_pct": {
+          "promo_echo": 0.0697,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "total_delta_volume": {
+          "promo_echo": 137918.0641,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Beverages": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Snacks": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Dairy": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Frozen Foods": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Household Care": {
+          "promo_echo": 1.013,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "worst_category_pct": {
+          "promo_echo": 1.013,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        }
+      },
+      "D percat selected+pooled": {
+        "total_delta_pct": {
+          "promo_echo": 1.1711,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "total_delta_volume": {
+          "promo_echo": 2161101.1972,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Beverages": {
+          "promo_echo": 1.2364,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Snacks": {
+          "promo_echo": 1.2364,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Dairy": {
+          "promo_echo": 1.2364,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Frozen Foods": {
+          "promo_echo": 1.2364,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Household Care": {
+          "promo_echo": 0.3395,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "worst_category_pct": {
+          "promo_echo": 1.2364,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        }
+      },
+      "E oracle": {
+        "total_delta_pct": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "total_delta_volume": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Beverages": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Snacks": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Dairy": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Frozen Foods": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "Household Care": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        },
+        "worst_category_pct": {
+          "promo_echo": 0.0,
+          "search_index": 0.0,
+          "competitor_promo": 0.0,
+          "fx_index": 0.0
+        }
+      }
+    },
+    "phantom_summary": {
+      "A pooled": {
+        "total |phantom| %": 2.9103,
+        "worst single slider %": 1.2364,
+        "live decoy sliders": 4.0
+      },
+      "B percat all": {
+        "total |phantom| %": 1.3443,
+        "worst single slider %": 25.89,
+        "live decoy sliders": 4.0
+      },
+      "C percat selected": {
+        "total |phantom| %": 0.0697,
+        "worst single slider %": 1.013,
+        "live decoy sliders": 1.0
+      },
+      "D percat selected+pooled": {
+        "total |phantom| %": 1.1711,
+        "worst single slider %": 1.2364,
+        "live decoy sliders": 1.0
+      },
+      "E oracle": {
+        "total |phantom| %": 0.0,
+        "worst single slider %": 0.0,
+        "live decoy sliders": 0.0
+      }
+    }
+  },
+  "worked_example": {
+    "A pooled": {
+      "baseline_volume": 181868268.21843123,
+      "scenario_volume": 158639402.2908157,
+      "delta_volume": -23228865.927615523,
+      "delta_pct": -12.772357792353695
+    },
+    "D selected+pooled": {
+      "baseline_volume": 184528317.20915487,
+      "scenario_volume": 161379248.66766587,
+      "delta_volume": -23149068.541489005,
+      "delta_pct": -12.544995202687803
+    },
+    "by_category": {
+      "arm D %": {
+        "Beverages": -15.656,
+        "Snacks": -16.878,
+        "Dairy": -6.314,
+        "Frozen Foods": -13.456,
+        "Household Care": -11.524
+      },
+      "arm A %": {
+        "Beverages": -12.851,
+        "Snacks": -12.767,
+        "Dairy": -12.665,
+        "Frozen Foods": -12.854,
+        "Household Care": -12.806
+      },
+      "gap pp": {
+        "Beverages": -2.805,
+        "Snacks": -4.111,
+        "Dairy": 6.351,
+        "Frozen Foods": -0.602,
+        "Household Care": 1.282
+      }
+    },
+    "waterfall": [
+      {
+        "driver": "avg_price",
+        "label": "Average price ($/unit)",
+        "group": "Commercial",
+        "delta_volume": -19762664.77,
+        "delta_pct": -10.71
+      },
+      {
+        "driver": "promo_depth",
+        "label": "Promo depth (avg % off)",
+        "group": "Commercial",
+        "delta_volume": -7592550.87,
+        "delta_pct": -4.11
+      },
+      {
+        "driver": "media_spend",
+        "label": "Media spend ($k)",
+        "group": "Commercial",
+        "delta_volume": 4206147.1,
+        "delta_pct": 2.28
+      }
+    ],
+    "plan": {
+      "avg_price": 5.0,
+      "media_spend": 30.0,
+      "promo_depth": -10.0
+    }
+  },
+  "metrics": {
+    "A pooled": {
+      "alpha": 0.01,
+      "n_obs": 330,
+      "n_drivers": 13,
+      "n_coefficients": 30,
+      "r2_log": 0.9226612245249681,
+      "mape_in_sample": 11.848525267349755,
+      "holdout": {
+        "months": 12,
+        "mape": 14.1849877723847,
+        "r2_volume": 0.9141224152373489,
+        "by_category": {
+          "Beverages": 20.31704173893388,
+          "Snacks": 8.09842175962712,
+          "Dairy": 7.217142070227915,
+          "Frozen Foods": 11.333417798326888,
+          "Household Care": 23.958915494807687
+        }
+      }
+    },
+    "B percat all": {
+      "alphas": {
+        "Beverages": 0.1,
+        "Snacks": 3.0,
+        "Dairy": 0.5,
+        "Frozen Foods": 0.5,
+        "Household Care": 3.0
+      },
+      "fallback": "zero",
+      "n_obs": 330,
+      "n_coefficients": 130,
+      "n_selected_total": 65,
+      "selected": {
+        "Beverages": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Dairy": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ]
+      },
+      "global_selected": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c",
+        "promo_echo",
+        "search_index",
+        "competitor_promo",
+        "fx_index"
+      ],
+      "degenerate_fallbacks": [],
+      "selected_backtest": {
+        "Beverages": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Dairy": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c",
+          "promo_echo",
+          "search_index",
+          "competitor_promo",
+          "fx_index"
+        ]
+      },
+      "global_selected_backtest": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c",
+        "promo_echo",
+        "search_index",
+        "competitor_promo",
+        "fx_index"
+      ],
+      "r2_log": 0.9956290754884062,
+      "mape_in_sample": 2.924109397966962,
+      "holdout": {
+        "months": 12,
+        "mape": 4.328479242608766,
+        "r2_volume": 0.9905113132766977,
+        "by_category": {
+          "Beverages": 4.451415525374806,
+          "Snacks": 3.3887191466188322,
+          "Dairy": 3.4320739581748945,
+          "Frozen Foods": 5.842502334145786,
+          "Household Care": 4.527685248729513
+        }
+      }
+    },
+    "C percat selected": {
+      "alphas": {
+        "Beverages": 0.5,
+        "Snacks": 0.1,
+        "Dairy": 0.01,
+        "Frozen Foods": 0.5,
+        "Household Care": 3.0
+      },
+      "fallback": "zero",
+      "n_obs": 330,
+      "n_coefficients": 97,
+      "n_selected_total": 32,
+      "selected": {
+        "Beverages": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Dairy": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "promo_echo"
+        ]
+      },
+      "global_selected": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c",
+        "promo_echo"
+      ],
+      "degenerate_fallbacks": [],
+      "selected_backtest": {
+        "Beverages": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "cpi_food",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Dairy": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence"
+        ]
+      },
+      "global_selected_backtest": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c",
+        "promo_echo"
+      ],
+      "r2_log": 0.9944745689415451,
+      "mape_in_sample": 3.261474331672845,
+      "holdout": {
+        "months": 12,
+        "mape": 9.090556838213702,
+        "r2_volume": 0.9516356824591732,
+        "by_category": {
+          "Beverages": 11.010151906856718,
+          "Snacks": 7.410291711869577,
+          "Dairy": 4.8042509549876575,
+          "Frozen Foods": 17.420965736774416,
+          "Household Care": 4.807123880580159
+        }
+      }
+    },
+    "D percat selected+pooled": {
+      "alphas": {
+        "Beverages": 0.1,
+        "Snacks": 0.1,
+        "Dairy": 0.01,
+        "Frozen Foods": 0.001,
+        "Household Care": 0.01
+      },
+      "fallback": "pooled",
+      "n_obs": 330,
+      "n_coefficients": 97,
+      "n_selected_total": 32,
+      "selected": {
+        "Beverages": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Dairy": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "promo_echo"
+        ]
+      },
+      "global_selected": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c",
+        "promo_echo"
+      ],
+      "degenerate_fallbacks": [
+        "cpi_food"
+      ],
+      "selected_backtest": {
+        "Beverages": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "cpi_food",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Dairy": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "promo_depth",
+          "promo_share",
+          "consumer_confidence",
+          "avg_temp_c"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence"
+        ]
+      },
+      "global_selected_backtest": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c",
+        "promo_echo"
+      ],
+      "r2_log": 0.9950708320132425,
+      "mape_in_sample": 3.0511860162734337,
+      "holdout": {
+        "months": 12,
+        "mape": 3.9699162271462036,
+        "r2_volume": 0.9922907460743607,
+        "by_category": {
+          "Beverages": 3.2187787887229287,
+          "Snacks": 3.3701500842760654,
+          "Dairy": 3.8590036401103873,
+          "Frozen Foods": 3.7330871261621463,
+          "Household Care": 5.668561496459486
+        }
+      }
+    },
+    "E oracle": {
+      "alphas": {
+        "Beverages": 0.5,
+        "Snacks": 0.5,
+        "Dairy": 0.001,
+        "Frozen Foods": 1.0,
+        "Household Care": 3.0
+      },
+      "fallback": "zero",
+      "n_obs": 330,
+      "n_coefficients": 110,
+      "n_selected_total": 45,
+      "selected": {
+        "Beverages": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Dairy": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ]
+      },
+      "global_selected": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c"
+      ],
+      "degenerate_fallbacks": [],
+      "selected_backtest": {
+        "Beverages": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Snacks": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Dairy": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Frozen Foods": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ],
+        "Household Care": [
+          "avg_price",
+          "distribution_acv",
+          "promo_depth",
+          "promo_share",
+          "media_spend",
+          "cpi_food",
+          "consumer_confidence",
+          "unemployment_rate",
+          "avg_temp_c"
+        ]
+      },
+      "global_selected_backtest": [
+        "avg_price",
+        "distribution_acv",
+        "promo_depth",
+        "promo_share",
+        "media_spend",
+        "cpi_food",
+        "consumer_confidence",
+        "unemployment_rate",
+        "avg_temp_c"
+      ],
+      "r2_log": 0.9954620242305492,
+      "mape_in_sample": 2.932008417055986,
+      "holdout": {
+        "months": 12,
+        "mape": 4.488717563935154,
+        "r2_volume": 0.9909462363407815,
+        "by_category": {
+          "Beverages": 4.189532032023342,
+          "Snacks": 3.107823677153307,
+          "Dairy": 3.2510851949149275,
+          "Frozen Foods": 7.81432342000929,
+          "Household Care": 4.080823495574901
+        }
+      }
+    }
+  },
+  "verdict": {
+    "holdout MAPE %": {
+      "A pooled": 14.185,
+      "B percat all": 4.3285,
+      "C percat selected": 9.0906,
+      "D percat selected+pooled": 3.9699,
+      "E oracle": 4.4887
+    },
+    "elasticity MAE (real)": {
+      "A pooled": 0.2434,
+      "B percat all": 0.1815,
+      "C percat selected": 0.2597,
+      "D percat selected+pooled": 0.26,
+      "E oracle": 0.1334
+    },
+    "elasticity MAE (decoy)": {
+      "A pooled": 0.0397,
+      "B percat all": 0.2256,
+      "C percat selected": 0.0028,
+      "D percat selected+pooled": 0.0144,
+      "E oracle": 0.0
+    },
+    "price slider MAE pp": {
+      "A pooled": 10.774,
+      "B percat all": 5.778,
+      "C percat selected": 7.234,
+      "D percat selected+pooled": 11.751,
+      "E oracle": 3.634
+    },
+    "phantom volume %": {
+      "A pooled": 2.9103,
+      "B percat all": 1.3443,
+      "C percat selected": 0.0697,
+      "D percat selected+pooled": 1.1711,
+      "E oracle": 0.0
+    },
+    "coefficients": {
+      "A pooled": 30,
+      "B percat all": 130,
+      "C percat selected": 97,
+      "D percat selected+pooled": 97,
+      "E oracle": 110
+    }
+  }
+}
