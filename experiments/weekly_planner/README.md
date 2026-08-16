@@ -229,3 +229,48 @@ collinear substitute was not a free swap, it was just a swap CV could not price.
 | `walkthrough.ipynb` | the whole pipeline, explained and run, using the modules above |
 | `build_notebook_standalone.py` | regenerates `walkthrough_standalone.ipynb` |
 | `walkthrough_standalone.ipynb` | the same walkthrough with **every function defined inline** — imports nothing from this folder, reads no CSV, loads no pickle. Copy it anywhere with numpy/pandas/matplotlib/scipy and it runs top to bottom. No decomposition section |
+| `build_notebook_template.py` | regenerates `walkthrough_template.ipynb` |
+| `walkthrough_template.ipynb` | **the reusable version, for your own data.** See below |
+
+---
+
+## Using this on your own data
+
+`walkthrough_template.ipynb` is the version to start from when you have a real
+dataset. Self-contained like the standalone notebook, but built for data with no
+ground truth.
+
+**Two cells to edit**, both marked `EDIT THIS`:
+
+1. **§0 — load your data.** Return a long DataFrame: one row per
+   `(category, period)`, with a volume column and one column per driver. Set
+   `DATE_COL` / `CATEGORY_COL` / `VOLUME_COL` and your names get mapped. A small
+   example dataset ships behind `USE_EXAMPLE_DATA = True` so it runs before you
+   plug anything in, with a loud banner so you cannot mistake it for your results.
+2. **§1 — describe your drivers.** `suggest_driver_spec()` generates a starter spec
+   from your columns; correct the `sign` and `controllable` fields, which it can
+   only guess at.
+
+**What is different from the synthetic notebooks:**
+
+- **§2 is a data quality gate.** Duplicate rows, non-positive volume, zeros under a
+  `log` transform, negatives, constant drivers, missing periods, too-short history,
+  too few observations per parameter, and near-duplicate driver pairs (|r| > 0.95,
+  which no amount of fitting can separate). Errors stop the run; warnings are
+  yours to judge.
+- **Frequency is detected, not assumed** — weekly on any weekday, monthly,
+  quarterly. Everything downstream adapts.
+- **No ground-truth comparisons.** Real data has none, so the elasticity-recovery
+  sections are replaced by the two checks that actually substitute for truth:
+  - **§8b coefficient stability** — refits on 60/70/80/90/100% of history and flags
+    any elasticity that swings or flips sign. A driver whose coefficient is not
+    stable should not justify a decision, whatever the holdout says.
+  - **§8c expected-sign agreement** — which drivers agree with your priors, and
+    which had to be dropped for contradicting them.
+- **§11 exports everything** to `planner_output/`: baseline driver files per
+  category (the ones you hand to a planner), driver forecasts, impacts, stability,
+  selection decisions and metrics.
+- **No decomposition section.**
+
+Frequency detection and the quality gate are verified against weekly (Sunday and
+Monday), monthly and quarterly calendars, and against deliberately broken input.
